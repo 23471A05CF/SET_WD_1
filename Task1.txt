@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Landing Page</title>
+  <stye>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 30px;
+}
+
+nav.scrolled {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Sections */
+header, section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+#about { background: #e2e2e2; }
+#services { background: #ccc; }
+#contact { background: #aaa; }
+</style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Welcome to Our Landing Page</h1>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>This is a sample about section with placeholder text.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>We offer various services to suit your needs.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with us today.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
